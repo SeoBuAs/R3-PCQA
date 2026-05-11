@@ -5,26 +5,24 @@
 ### Ray-Reprojection-Reinforcement for No-Reference 3D Point Cloud Quality Assessment
 
 [![Conference](https://img.shields.io/badge/CVPR-2026-1b6ec2.svg?style=for-the-badge)](#)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?style=for-the-badge&logo=arxiv&logoColor=white)](#)
-[![Project Page](https://img.shields.io/badge/Project-Page-2ea44f.svg?style=for-the-badge&logo=github)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=for-the-badge)](LICENSE)
 
 <sub>📄 <b>Official PyTorch implementation</b> of our CVPR 2026 paper.</sub>
 
 <br/>
 
-<b>Author 1<sup>1</sup> · Author 2<sup>1</sup> · Author 3<sup>2</sup> · Author 4<sup>1,*</sup></b>
+<b>Junhyuk Seo<sup>†</sup> &nbsp;·&nbsp; Sanghyuk Seo<sup>†</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>*</sup></b>
 
-<sub><sup>1</sup>Affiliation 1 &nbsp;·&nbsp; <sup>2</sup>Affiliation 2 &nbsp;·&nbsp; <sup>*</sup>Corresponding author</sub>
+<sub>Hansung University</sub>
+
+<sub><sup>†</sup>Equal contribution &nbsp;·&nbsp; <sup>*</sup>Corresponding author</sub>
+
+<sub>`{withop9974, aissh, 2071290, ohhs}@hansung.ac.kr`</sub>
 
 </div>
 
-<!--
-  TODO before public release:
-    - Replace `#` in badge links with actual URLs (arXiv, project page).
-    - Replace author placeholders with real names/affiliations.
-    - (Optional) Add a teaser image: <p align="center"><img src="assets/teaser.png" width="85%"/></p>
--->
+<!-- TODO: add arXiv / project page badges once links are available. -->
+<!-- (Optional) Add a teaser image: <p align="center"><img src="assets/teaser.png" width="85%"/></p> -->
 
 ---
 
