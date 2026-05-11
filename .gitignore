@@ -48,3 +48,7 @@ pixel_coordinates/
 # Misc
 *.log
 *.tmp
+
+# Paper drafts (distribute via arXiv / project page instead)
+*.pdf
+!docs/*.pdf
