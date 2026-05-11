@@ -9,11 +9,11 @@
 
 <br/>
 
-<b>Junhyuk Seo<sup>*</sup> &nbsp;·&nbsp; Sanghyuk Seo<sup>*</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>†</sup></b>
+<b>Junhyuk Seo<sup>&ast;</sup> &nbsp;·&nbsp; Sanghyuk Seo<sup>&ast;</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>&dagger;</sup></b>
 
 <sub>Hansung University</sub>
 
-<sub><sup>*</sup>Equal contribution &nbsp;·&nbsp; <sup>†</sup>Corresponding author</sub>
+<sub><sup>&ast;</sup>Equal contribution &nbsp;·&nbsp; <sup>&dagger;</sup>Corresponding author</sub>
 
 <sub>`{withop9974, aissh, 2071290, ohhs}@hansung.ac.kr`</sub>
 
