@@ -2,10 +2,10 @@
 
 <h1>R3-PCQA: Ray-Reprojection-Reinforcement for No-Reference 3D Point Cloud Quality Assessment</h1>
 
-[![Conference](https://img.shields.io/badge/CVPR-2026-1b6ec2.svg?style=for-the-badge)](#)
+[![Conference](https://img.shields.io/badge/CVPR%202026-Poster-1b6ec2.svg?style=for-the-badge)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=for-the-badge)](LICENSE)
 
-<sub>📄 <b>Official PyTorch implementation</b> of our CVPR 2026 paper.</sub>
+<sub>📄 <b>Official PyTorch implementation</b> of our CVPR 2026 (Poster) paper.</sub>
 
 <br/>
 
@@ -26,7 +26,7 @@
 
 ## 📢 News / Updates
 
-- **[2026-02]** 🎉 R3-PCQA has been accepted to **CVPR 2026**!
+- **[2026-02]** 🎉 R3-PCQA has been accepted to **CVPR 2026** as a **Poster**!
 - **[2026-05]** Initial code released.
 
 <!-- 정확한 월이 다르면 위 날짜만 수정해 주세요. 추후 항목(arXiv, pretrained weights 등)은 같은 형식으로 추가하면 됩니다. -->
