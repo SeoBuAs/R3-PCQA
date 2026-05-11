@@ -1,8 +1,6 @@
 <div align="center">
 
-# R3-PCQA
-
-### Ray-Reprojection-Reinforcement for No-Reference 3D Point Cloud Quality Assessment
+<h1>R3-PCQA: Ray-Reprojection-Reinforcement for No-Reference 3D Point Cloud Quality Assessment</h1>
 
 [![Conference](https://img.shields.io/badge/CVPR-2026-1b6ec2.svg?style=for-the-badge)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=for-the-badge)](LICENSE)
@@ -11,11 +9,11 @@
 
 <br/>
 
-<b>Junhyuk Seo<sup>†</sup> &nbsp;·&nbsp; Sanghyuk Seo<sup>†</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>*</sup></b>
+<b>Junhyuk Seo<sup>*</sup> &nbsp;·&nbsp; Sanghyuk Seo<sup>*</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>†</sup></b>
 
 <sub>Hansung University</sub>
 
-<sub><sup>†</sup>Equal contribution &nbsp;·&nbsp; <sup>*</sup>Corresponding author</sub>
+<sub><sup>*</sup>Equal contribution &nbsp;·&nbsp; <sup>†</sup>Corresponding author</sub>
 
 <sub>`{withop9974, aissh, 2071290, ohhs}@hansung.ac.kr`</sub>
 
