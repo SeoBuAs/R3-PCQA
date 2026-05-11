@@ -1,4 +1,31 @@
-# R3-PCQA
+# R3-PCQA: Ray-Reprojection-Reinforcement for No-Reference 3D Point Cloud Quality Assessment
+
+**CVPR 2026**
+
+## 📢 News / Updates
+
+- **[2026-02]** 🎉 R3-PCQA has been accepted to **CVPR 2026**!
+- **[2026-05]** Initial code released.
+
+<!-- 정확한 월이 다르면 위 날짜만 수정해 주세요. 추후 항목(arXiv, pretrained weights 등)은 같은 형식으로 추가하면 됩니다. -->
+
+## 📝 Abstract
+
+Prevailing no-reference 3D point cloud quality assessment methods predominantly treat 2D projections and 3D point clouds as independent modalities and rely on simplistic feature fusion, thereby neglecting fundamental mechanisms underlying human 3D perception. To address this limitation, we introduce **R3-PCQA** (Ray-Reprojection-Reinforcement 3D Point Cloud Quality Assessor), a novel and principled framework that explicitly encodes perceptual priors into the assessment pipeline: A geometric-aware ray-based reprojection pipeline simulates viewpoint-dependent observation of 3D structure. A reinforcement-learning-based quality-salient subcloud selector adaptively attends to perceptually informative regions. The global view attention module aggregates local quality responses across viewpoints, forming a unified representation that facilitates reliable cross-view inference. Extensive experiments demonstrate that R3-PCQA achieves state-of-the-art performance on **SJTU-PCQA**, **WPC**, and **WPC2.0**.
+
+## 🔧 Method Overview
+
+<p align="center">
+  <img src="assets/pipeline.png" alt="R3-PCQA pipeline overview" width="90%"/>
+</p>
+
+R3-PCQA consists of three key components:
+
+1. **Ray-based Reprojection** — A geometric-aware pipeline that simulates viewpoint-dependent observation of 3D structure, bridging 2D projections and the underlying 3D geometry.
+2. **RL-based Quality-Salient Subcloud Selector** — A reinforcement-learning agent that adaptively attends to perceptually informative regions of the point cloud.
+3. **Global View Attention** — Aggregates local quality responses across viewpoints into a unified representation for reliable cross-view inference.
+
+<!-- assets/pipeline.png 파일을 저장소에 추가해 주세요. (권장: 1600px width, PNG) -->
 
 ## Project Structure
 
