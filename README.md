@@ -41,23 +41,12 @@ Prevailing no-reference 3D point cloud quality assessment methods predominantly 
   <img src="assets/pipeline.png" alt="R3-PCQA architecture overview" width="90%"/>
 </p>
 
-R3-PCQA emulates three HVS priors — **viewpoint-dependent processing**, **selective attention**, and **multiview integration** — through a geometric-aware preprocessing pipeline and three architectural components, trained with a two-stage curriculum.
+R3-PCQA emulates three HVS priors — *viewpoint-dependent processing*, *selective attention*, and *multiview integration* — via four lightweight components, trained with a two-stage curriculum:
 
-### Preprocessing · Geometric-aware Reprojection
-The input point cloud is rendered onto **V = 20** uniformly distributed viewpoints centered on the faces of a regular icosahedron. At each view, **N = 9** candidate pixels are obtained by K-means on valid-depth pixels, back-projected to camera rays, and matched to the nearest visible 3D point. A KNN expansion (M = 8192 points) around each seed yields the pixel-to-subcloud correspondences `(p_{v,n}, X_{v,n})` that link 2D coordinates to view-visible 3D regions — establishing precise 2D–3D spatial alignment.
-
-### 1. Local View Encoder
-At each viewpoint, a 2D encoder `E_rgb` captures fine-grained **texture** distortions from `I_v`, while a 3D encoder `E_pc` captures coarse **geometric** distortions from the QSS-selected subcloud `X_{v,n*}`. The two features are fused into a coupled geometry–texture representation `F_v`, and concatenated with an auxiliary local-quality prediction `ŷ_v^local` to form the **local view token** `z_v`. Parameters are shared across views to learn generalizable, view-agnostic representations.
-
-### 2. Quality-Salient Subcloud Selector (QSS)
-To our knowledge the **first reinforcement-learning module for PCQA**. QSS frames per-view subcloud selection as a **contextual bandit** problem: a self-attention policy network observes 11×11 local contexts `H_v` cropped from an intermediate feature map of `E_rgb`, and outputs the temperature-softmax policy `π_θ(a_{v,n} | H_v)` over the N candidate subclouds. The policy is trained with **REINFORCE**, mimicking HVS selective attention to perceptually decisive regions while reducing compute by evaluating only one subcloud per view.
-
-### 3. Global View Attention
-A **local-to-global aggregator** over the V local view tokens. The mean-pooled token `g` queries a multi-head attention over `Z = [z_1, …, z_V]^T`, producing per-view attention weights `{α_v}` and a refined global context `g̃`. The global regressor maps `g̃ ⊕ g` to the final quality prediction `ŷ`, enabling adaptive multiview integration.
-
-### Training · Two-stage Curriculum Learning
-1. **Warm-up phase** — QSS is deactivated and one of `{X_{v,n}}_{n=1}^N` is sampled randomly so the local view encoder learns generalized representations: `L_warm-up = L_global + L_local`.
-2. **Joint phase** — QSS is activated and trained jointly with the encoders: `L_joint = L_global + L_local + L_policy`. The REINFORCE reward `r_b = exp(−s · |ŷ_b − y_b| / σ)` (with `s = 100`, `σ = 15`) is **redistributed across views by the attention weights** `α_{b,v}`, providing per-view credit assignment that steers each viewpoint's policy toward subclouds most informative for the global score.
+1. **Geometric-aware Reprojection** — Casts rays from 20 icosahedral viewpoints and uses K-means + KNN to build precise pixel-to-subcloud correspondences, bridging 2D projections and 3D geometry.
+2. **Local View Encoder** — Per-view fusion of fine **texture** features (2D) and coarse **geometric** features (3D) into a coupled local view token.
+3. **Quality-Salient Subcloud Selector (QSS)** — A REINFORCE-trained contextual-bandit policy that selects the perceptually most informative subcloud per view — the first RL module for PCQA.
+4. **Global View Attention** — Multi-head attention over all view tokens for local-to-global aggregation, yielding the final quality score.
 
 ## Project Structure
 
