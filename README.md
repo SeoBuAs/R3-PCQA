@@ -47,26 +47,28 @@ R3-PCQA consists of three key components:
 2. **RL-based Quality-Salient Subcloud Selector** — A reinforcement-learning agent that adaptively attends to perceptually informative regions of the point cloud.
 3. **Global View Attention** — Aggregates local quality responses across viewpoints into a unified representation for reliable cross-view inference.
 
-<!-- assets/pipeline.png 파일을 저장소에 추가해 주세요. (권장: 1600px width, PNG) -->
-
 ## Project Structure
 
 ```
-.R3-PCQA/
-├── train.py           
-├── inference.py       
+R3-PCQA/
+├── train.py
+├── inference.py
 ├── src/
-│   ├── model.py       
-│   ├── data_loader.py 
+│   ├── model.py
+│   ├── data_loader.py
 │   ├── pixel_coordinate_utils.py
 │   ├── trainer_utils.py
 │   └── preprocessing/
 │       ├── projection.py
 │       └── reprojection.py
-└── data_csv/
-    ├── SJTU_MOS.csv
-    ├── WPC_MOS.csv
-    └── WPC2.0_MOS.csv
+├── data_csv/
+│   ├── SJTU_MOS.csv
+│   ├── WPC_MOS.csv
+│   └── WPC2.0_MOS.csv
+├── assets/
+│   └── pipeline.png
+├── LICENSE
+└── README.md
 ```
 
 ## Data Preprocessing

@@ -1,0 +1,50 @@
+# macOS / OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.conda/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.ipynb_checkpoints/
+
+# Experiment / training outputs
+wandb/
+runs/
+logs/
+checkpoints/
+endtoend_results/
+outputs/
+*.pth
+*.pt
+*.ckpt
+*.bin
+
+# Preprocessed data caches (regenerate via src/preprocessing/*)
+projections/
+3d_patches/
+pixel_coordinates/
+*.npy
+*.npz
+
+# Misc
+*.log
+*.tmp
