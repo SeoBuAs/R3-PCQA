@@ -136,5 +136,5 @@ python inference.py \
 - wandb (optional)
 - torchvision
 - PIL
-- open3d
+- open3d **(== 0.19.0)**
 - opencv-python
