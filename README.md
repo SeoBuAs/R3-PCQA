@@ -41,7 +41,7 @@ Prevailing no-reference 3D point cloud quality assessment methods predominantly 
   <img src="assets/pipeline.png" alt="R3-PCQA architecture overview" width="90%"/>
 </p>
 
-R3-PCQA emulates three HVS priors — *viewpoint-dependent processing*, *selective attention*, and *multiview integration* — via four lightweight components, trained with a two-stage curriculum:
+R3-PCQA emulates three HVS priors — *viewpoint-dependent processing*, *selective attention*, and *multiview integration* — via four lightweight components:
 
 1. **Geometric-aware Reprojection** — Casts rays from 20 icosahedral viewpoints and uses K-means + KNN to build precise pixel-to-subcloud correspondences, bridging 2D projections and 3D geometry.
 2. **Local View Encoder** — Per-view fusion of fine **texture** features (2D) and coarse **geometric** features (3D) into a coupled local view token.
