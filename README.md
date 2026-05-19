@@ -9,7 +9,7 @@
 
 <br/>
 
-<b>Junhyuk Seo<sup>&ast;</sup> &nbsp;·&nbsp; Sanghyuk Seo.<sup>&ast;</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>&dagger;</sup></b>
+<b>Junhyuk Seo<sup>&ast;</sup> &nbsp;·&nbsp; Sanghyuk Seo<sup>&ast;</sup> &nbsp;·&nbsp; Dawoon Kim &nbsp;·&nbsp; Heeseok Oh<sup>&dagger;</sup></b>
 
 <sub>Hansung University</sub>
 
